@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Que comece o Jogo</h1>
+        <button class="botao">Botão</button>
+        <audio src="jogo.mp3" id="audio"></audio>
+    
+    </div>
+  
+    <script>
+const gemido = document.querySelector("#audio")
+const botao = document.querySelector(".botao")
+botao.addEventListener("click",()=>{
+
+    gemido.play();
+})
+
+    </script>
+
+    <style>
+        body{
+            background-image:  url(Recuperado.png);
+            background-position: center;
+            background-size: cover;
+            margin: auto;
+            max-width: 800px;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+}
+        div{
+            width: 800px;
+        }
+        button{
+            background-color: blueviolet;
+            box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+            padding: 11px 33px;
+            color: aliceblue;
+            font-family: cursive;
+            cursor: pointer;
+         }
+         h1{
+            color: white;
+            width: 304px;
+            margin: 28px auto;
+            font-family: cursive;
+         }
+         h1::after{
+            content: '';
+            display: block;
+            background: #9d00ff;
+            width: 160px;
+            height: 4px;
+            margin: 7px auto;
+         }
+    </style>
+</body>
+</html>
